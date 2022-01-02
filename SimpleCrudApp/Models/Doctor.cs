@@ -12,5 +12,7 @@ namespace SimpleCrudApp.Models
         public string Phone { get; set; }
         public bool IsAvailable { get; set; }
         public string Address { get; set; }
+        public int AppointmentId { get; set; }
+        public ICollection<Appointment> Appointments { get; set; }
     }
 }

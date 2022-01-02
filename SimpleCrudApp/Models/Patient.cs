@@ -12,7 +12,10 @@ namespace SimpleCrudApp.Models
         public DateTime BirthDate { get; set; }
         public string Phone { get; set; }
         public string Address { get; set; }
-        public string CityId { get; set; }
+        public string City { get; set; }
+        
+        public int AppointmentId { get; set; }
+        public ICollection<Appointment> Appointments { get; set; }
 
     }
 }
