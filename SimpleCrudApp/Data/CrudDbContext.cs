@@ -8,11 +8,12 @@ namespace SimpleCrudApp.Models
 {
     public class CrudDbContext : DbContext
     {
-        public CrudDbContext(DbContextOptions <CrudDbContext> options ):base(options)
+        public CrudDbContext(DbContextOptions<CrudDbContext> options) : base(options)
         {
 
         }
 
-        public DbSet <Patient> Patients { get; set; }
+        public DbSet<Patient> Patients { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
     }
 }
